@@ -37,7 +37,7 @@ const Navbar = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
-      <div className="container nav-container">
+      <div className="nav-container">
         <a href="#home" className="logo">
           <img src="/logo.png" alt="Lekhan Media Filmworks Logo" className="navbar-logo-img" />
           <span className="logo-text text-gradient">Lekhan Media</span>

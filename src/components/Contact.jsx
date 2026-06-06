@@ -25,7 +25,7 @@ const Contact = () => {
                 <div className="contact-icon"><Phone size={20} /></div>
                 <div>
                   <h4>WhatsApp / Call</h4>
-                  <p>+1 (555) 123-4567</p>
+                  <p><a href="https://wa.me/2207825359" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>+220 7825359</a></p>
                 </div>
               </div>
               <div className="contact-item">
@@ -39,7 +39,7 @@ const Contact = () => {
                 <div className="contact-icon"><MapPin size={20} /></div>
                 <div>
                   <h4>Studio Location</h4>
-                  <p>123 Cinematic Blvd, Creative District, NY 10001</p>
+                  <p>Behind Comium Building, Kairaba Avenue, Banjul, The Gambia</p>
                 </div>
               </div>
             </div>

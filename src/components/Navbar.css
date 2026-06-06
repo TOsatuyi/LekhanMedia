@@ -1,8 +1,9 @@
 .navbar {
   position: fixed;
   top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 90%;
   max-width: 1200px;
   background: var(--glass-bg);
@@ -41,6 +42,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -166,4 +168,48 @@
 
 .mobile-nav-link:hover {
   color: var(--accent-gold-dark);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.6rem 1.2rem;
+    width: 94%;
+  }
+  .navbar.scrolled {
+    padding: 0.6rem 1.2rem;
+    width: 96%;
+  }
+  .navbar-logo-img {
+    height: 34px;
+  }
+  .logo-text {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    width: 94%;
+  }
+  .navbar.scrolled {
+    padding: 0.5rem 1rem;
+    width: 94%;
+  }
+  .navbar-logo-img {
+    height: 28px;
+  }
+  .logo-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    margin-left: 0.4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-text {
+    font-size: 0.75rem;
+  }
 }

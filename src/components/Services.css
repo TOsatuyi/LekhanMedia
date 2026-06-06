@@ -1,0 +1,208 @@
+.craft-section {
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.craft-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+
+@media (min-width: 992px) {
+  .craft-grid {
+    grid-template-columns: 0.75fr 2.25fr;
+    gap: 4rem;
+  }
+}
+
+/* Tabs list on the left */
+.craft-tabs-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .craft-tabs-list {
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 8rem;
+  }
+}
+
+.craft-tab-btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  cursor: pointer;
+  padding: 0.75rem 0;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+}
+
+.craft-tab-num {
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.craft-tab-name {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.craft-tab-btn:hover .craft-tab-name {
+  color: var(--accent-gold-dark);
+}
+
+.craft-tab-btn.active .craft-tab-name {
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.craft-tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: width 0.3s ease;
+}
+
+.craft-tab-btn.active::after {
+  width: 100%;
+}
+
+/* Details showcase card on the right */
+.craft-details-card {
+  padding: 2.2rem;
+  background: white !important;
+  border: 1px solid rgba(197, 168, 128, 0.12) !important;
+  box-shadow: 0 15px 40px rgba(22, 28, 34, 0.04) !important;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.craft-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .craft-showcase-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.craft-category-badge {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  color: var(--accent-gold-dark);
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.craft-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.craft-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 2.2rem;
+}
+
+/* Gear Spec details highlight */
+.craft-gear-specs {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(197, 168, 128, 0.08);
+}
+
+.gear-specs-heading {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+  padding-bottom: 0.5rem;
+}
+
+.gear-spec-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px dashed rgba(197, 168, 128, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.gear-spec-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.spec-label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  color: var(--accent-gold-dark);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.spec-value {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Visual Pane image */
+.craft-visual-pane {
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(22, 28, 34, 0.08);
+  border: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.craft-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.craft-details-card:hover .craft-visual-img {
+  transform: scale(1.03);
+}

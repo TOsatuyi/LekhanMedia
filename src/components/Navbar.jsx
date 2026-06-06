@@ -39,7 +39,8 @@ const Navbar = () => {
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
       <div className="container nav-container">
         <a href="#home" className="logo">
-          <span className="text-gradient">LMF</span>
+          <img src="/logo.png" alt="Lekhan Media Filmworks Logo" className="navbar-logo-img" />
+          <span className="logo-text text-gradient">Lekhan Media</span>
         </a>
 
         <nav className="desktop-nav">

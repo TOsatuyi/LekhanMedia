@@ -7,7 +7,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h2 className="logo"><span className="text-gradient">LMF</span></h2>
+            <h2 className="logo">
+              <img src="/logo.png" alt="Lekhan Media Filmworks Logo" className="footer-logo-img" />
+            </h2>
             <p className="footer-desc">
               Capturing stories beyond frames. A premium cinematic production house for those who demand visual excellence.
             </p>

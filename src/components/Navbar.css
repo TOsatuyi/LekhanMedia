@@ -53,6 +53,23 @@
   align-items: center;
 }
 
+.navbar-logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-left: 0.75rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .desktop-nav {
   display: none;
   align-items: center;
